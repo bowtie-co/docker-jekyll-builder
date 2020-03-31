@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f Gemfile ]; then
+  bundle install
+  bundle exec jekyll build
+else
+  jekyll build
+fi
